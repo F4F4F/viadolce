@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Via Dolce · Repostería Gourmet en Cali</title>
+<meta name="description" content="Tortas, galletas y postres personalizados, hechos a mano en Cali. Arma tu pedido y agéndalo por WhatsApp.">
+<link rel="icon" href="img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="brand" href="#inicio">
+      <img src="img/logo.jpg" alt="" width="48" height="48">
+      <span class="brand-name">Via Dolce</span>
+      <span class="brand-tag">Repostería Gourmet</span>
+    </a>
+    <nav class="nav" aria-label="Principal">
+      <a href="#productos">Productos</a>
+      <a href="#como-pedir">Cómo pedir</a>
+      <a href="#contacto">Contacto</a>
+      <a class="btn btn-primary btn-sm" href="#pedido">Mi pedido · <span id="cart-count">0</span></a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section id="inicio" class="wrap hero">
+    <div class="hero-text">
+      <p class="eyebrow">Repostería gourmet · hecha a mano</p>
+      <h1>Donde la magia se vuelve sabor.</h1>
+      <p class="lead">Tortas, galletas y postres personalizados, hechos a mano en Cali. Arma tu pedido aquí y lo agendamos contigo por WhatsApp.</p>
+      <div class="btn-row">
+        <a class="btn btn-primary" href="#productos">Ver productos</a>
+        <a class="btn btn-outline" href="#como-pedir">Cómo pedir</a>
+      </div>
+    </div>
+    <img class="hero-img" src="img/logo.jpg" alt="Logo de Via Dolce Repostería Gourmet" width="800" height="800">
+  </section>
+
+  <section id="productos" class="band-white">
+    <div class="wrap section">
+      <div class="section-head">
+        <div>
+          <h2>Nuestros postres</h2>
+          <p class="muted">Todo se hace por encargo. Lo agotado vuelve pronto; pregunta por los sabores del momento.</p>
+        </div>
+        <div class="filters" role="group" aria-label="Filtrar productos" id="filters"></div>
+      </div>
+      <div class="grid-products" id="products"></div>
+    </div>
+  </section>
+
+  <section id="pedido" class="wrap section order">
+    <div class="order-intro">
+      <h2>Tu pedido</h2>
+      <p class="muted">Revisa lo que elegiste. Al enviarlo se abre WhatsApp con el mensaje listo; ahí confirmamos el total, la fecha y si es para recoger o domicilio.</p>
+    </div>
+    <div class="card order-card">
+      <p class="muted" id="cart-empty">Todavía no has agregado nada. Usa el botón + en los productos disponibles.</p>
+      <ul class="cart-lines" id="cart-lines"></ul>
+      <p class="cart-total" id="cart-total" hidden></p>
+      <label for="nota" class="label">Nota para la repostería (opcional)</label>
+      <textarea id="nota" rows="3" placeholder="Ej: es para un cumpleaños, lo recojo el sábado en la mañana"></textarea>
+      <a class="btn btn-whatsapp is-disabled" id="wa-order" href="#productos" aria-disabled="true">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.4A8.4 8.4 0 1 1 21 11.5z"/></svg>
+        <span>Enviar pedido por WhatsApp</span>
+      </a>
+    </div>
+  </section>
+
+  <section id="como-pedir" class="band-dark">
+    <div class="wrap section">
+      <h2>Cómo pedir</h2>
+      <ol class="steps">
+        <li><span class="step-n">1</span><h3>Elige o cuéntanos tu idea</h3><p>Agrega productos o escribe en la nota cómo quieres tu torta o detalle.</p></li>
+        <li><span class="step-n">2</span><h3>Envía por WhatsApp</h3><p>El mensaje sale armado con tu pedido.</p></li>
+        <li><span class="step-n">3</span><h3>Agenda y recibe</h3><p>Confirmamos fecha, total y entrega por chat. Reserva con tiempo.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="nosotros" class="wrap section about">
+    <div class="about-text">
+      <p class="eyebrow">Hecho a mano</p>
+      <h2>Aquí no hacemos producciones en masa.</h2>
+      <p class="muted big">Cada pedido es único, pensado y creado según tu idea, tu momento y la persona que lo va a recibir. También nos encuentras en ferias y hacemos mesas dulces para eventos.</p>
+    </div>
+    <div class="about-photos">
+      <figure><img src="img/horno.jpg" alt="Galletas saliendo del horno" width="800" height="800" loading="lazy"><figcaption>Recién salidas del horno</figcaption></figure>
+      <figure><img src="img/feria.jpg" alt="Stand de Via Dolce en la Feria Dulce del centro comercial La Estación" width="800" height="800" loading="lazy"><figcaption>Feria Dulce · C.C. La Estación</figcaption></figure>
+    </div>
+  </section>
+</main>
+
+<footer id="contacto" class="wrap footer">
+  <div>
+    <strong class="footer-brand">Via Dolce · Repostería Gourmet</strong>
+    <span>Cali, Valle del Cauca · [ZONA DE ENTREGA]</span>
+  </div>
+  <div>
+    <strong>Horario</strong>
+    <span>[DÍAS Y HORAS DE PEDIDOS]</span>
+  </div>
+  <div>
+    <strong>Síguenos</strong>
+    <a href="https://www.instagram.com/viadolce_reposteria/" target="_blank" rel="noopener">Instagram @viadolce_reposteria</a>
+    <a href="https://wa.me/573147675906" target="_blank" rel="noopener">WhatsApp 314 767 5906</a>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
